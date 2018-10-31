@@ -35,6 +35,11 @@
 			<artifactId>dao</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-jdbc</artifactId>
+			<version>1.5.13.RELEASE</version>
+		</dependency>
 	</dependencies>
 
 	<profiles>
@@ -51,38 +56,7 @@
 	</profiles>
 	<!-- maven插件配置 -->
 	<build>
-		<finalName>study</finalName>
-		<filters>
-			<filter>${basedir}/../properties/${runtime.path}/${runtime.name}.properties</filter>
-		</filters>
 		<plugins>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-resources-plugin</artifactId>
-				<configuration>
-					<encoding>UTF-8</encoding>
-				</configuration>
-			</plugin>
-
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-compiler-plugin</artifactId>
-				<version>3.2</version>
-				<dependencies>
-					<dependency>
-						<groupId>org.codehaus.plexus</groupId>
-						<artifactId>plexus-compiler-javac</artifactId>
-						<version>1.8.1</version>
-					</dependency>
-				</dependencies>
-				<configuration>
-					<source>1.7</source>
-					<target>1.7</target>
-					<meminitial>128m</meminitial>
-					<maxmem>512m</maxmem>
-					<encoding>UTF-8</encoding>
-				</configuration>
-			</plugin>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
@@ -96,24 +70,9 @@
 						</goals>-->
 
 							<phase>none</phase>
-
 					</execution>
 				</executions>
 			</plugin>
 		</plugins>
-
-
-		<resources>
-			<resource>
-				<directory>src/main/resources</directory>
-				<filtering>true</filtering>
-
-			</resource>
-			<resource>
-				<directory>src/test/resources</directory>
-				<filtering>true</filtering>
-
-			</resource>
-		</resources>
 	</build>
 </project>
