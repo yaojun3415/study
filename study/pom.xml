@@ -19,6 +19,8 @@
 	</parent>
 	<modules>
 		<module>web</module>
+		<module>dao</module>
+		<module>biz</module>
 	</modules>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
