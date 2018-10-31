@@ -1,14 +1,4 @@
-/target/
 !.mvn/wrapper/maven-wrapper.jar
-
-### STS ###
-.apt_generated
-.classpath
-.factorypath
-.project
-.settings
-.springBeans
-.sts4-cache
 
 ### IntelliJ IDEA ###
 .idea
@@ -16,10 +6,11 @@
 *.iml
 *.ipr
 
-### NetBeans ###
-/nbproject/private/
-/build/
-/nbbuild/
-/dist/
-/nbdist/
-/.nb-gradle/
+application.propertise
+log4j2-test.xml
+rebel.xml
+.rebel.xml.bak
+
+web/target
+dal/target
+biz/target

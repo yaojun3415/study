@@ -8,8 +8,15 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-
+    <packaging>jar</packaging>
     <artifactId>biz</artifactId>
-
+    <version>0.0.1-SNAPSHOT</version>
+    <dependencies>
+     <dependency>
+            <groupId>com.yaojun</groupId>
+            <artifactId>dao</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
 
 </project>
